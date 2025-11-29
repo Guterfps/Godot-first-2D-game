@@ -16,8 +16,8 @@ func show_message(text: String) -> void:
 	$Message.show()
 	$MessageTimer.start()
 
-func show_game_over() -> void:
-	show_message("Game Over :(")
+func show_game_over(score: int) -> void:
+	show_message("Game Over :(\n Score: " + str(score))
 	
 	await $MessageTimer.timeout
 	
