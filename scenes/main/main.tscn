@@ -62,10 +62,10 @@ curve = SubResource("Curve2D_iuonh")
 
 [node name="HUD" parent="." instance=ExtResource("4_l3cfh")]
 
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamOggVorbis_ow5a4")
 
-[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_6q06x")
 
 [connection signal="hit" from="Player" to="." method="game_over"]
